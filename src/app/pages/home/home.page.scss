@@ -1,0 +1,32 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: top;
+  font-family: serif;
+  font-size: xxx-large;
+  height: 100vh;
+  background-color: cadetblue;
+}
+
+.btn{
+  margin-top: 200px;
+  width: 250px;
+  --background:#000000;
+}
+
+
+.btn ion-avatar {
+  margin-right: 30px; /* Ajusta la separación entre el avatar y el label */
+}
+
+.btn1{
+  margin-top: 50px;
+  width: 250px;
+  --background:#000000;
+}
+
+.btn1 ion-avatar {
+  margin-right: 30px; /* Ajusta la separación entre el avatar y el label */
+}
+

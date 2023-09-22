@@ -1,0 +1,99 @@
+<ion-content>
+  <ion-menu contentId="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title class="menuclass">Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content color="light" class="ion-padding">
+        <ion-button expand="full" class="btn-menu" [routerLink]="['/perfil']">Perfil</ion-button>
+        <ion-button expand="full" class="btn-menu" [routerLink]="['/buscar-viajes']">Buscar Viaje</ion-button>
+        <ion-button expand="full" class="btn-menu" [routerLink]="['/mi-viajes']">Mis viajes</ion-button>
+        <ion-button expand="full" class="btn-menu" [routerLink]="['/listado-viajes']">Listado de Viajes</ion-button>
+        <ion-button expand="full" class="btn-menu" [routerLink]="['/metodos-pago']">metodos de Pago</ion-button>
+        <ion-button expand="full" class="btn-menu" [routerLink]="['/perfil-conductor']">Perfil de conductor</ion-button>
+        <ion-button expand="full" class="btn-menu" [routerLink]="['/home']">Cerrar Session</ion-button>
+      </ion-content>
+  </ion-menu>
+
+  <div class="ion-page" id="main-content">
+    <ion-buttons slot="start">
+      <ion-menu-button class="menu"></ion-menu-button>
+    </ion-buttons>
+  </div>
+
+  <div class="login bg degradado-negro">
+    <div style="margin-bottom: 10px;">
+      <ion-label
+        class="animated-text"
+        style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5)"
+      >
+        <span class="custom-t">T</span>e<span class="custom-l">Ll</span>evo<span
+          class="custom-a"
+          >A</span
+        >pp
+      </ion-label>
+    </div>
+
+    <div class="mis-viajes" style="text-align: center;">
+      <!-- Buscar Viaje -->
+    <div class="buscar-viaje">
+      <ion-item>
+        <ion-label>Dirección de Inicio</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Destino</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+      <ion-button expand="block" class="btn-buscar">Buscar</ion-button>
+    </div>
+    
+    <!-- Viajes Encontrados -->
+    <div class="viajes-encontrados">
+      <h2 style="text-align: center;">Viajes Encontrados</h2>
+      <ion-item>
+        <ion-avatar slot="start">
+          <img src="#" alt="Foto">
+        </ion-avatar>
+        <ion-label>
+          <h3>Nombre del Conductor</h3>
+          <p>Destino</p>
+        </ion-label>
+        <ion-button slot="end" class="btn-ver">Ver Viaje</ion-button>
+      </ion-item>
+      <ion-item>
+        <ion-avatar slot="start">
+          <img src="#" alt="Foto">
+        </ion-avatar>
+        <ion-label>
+          <h3>Nombre del Conductor</h3>
+          <p>Destino</p>
+        </ion-label>
+        <ion-button slot="end" class="btn-ver">Ver Viaje</ion-button>
+      </ion-item>
+      <!-- Repite estos bloques para cada viaje encontrado -->
+    </div>
+    
+    <!-- Seleccionar Método de Pago -->
+    <div class="metodo-pago">
+      <h2 style="text-align: center;">Seleccionar Método de Pago</h2>
+      <ion-radio-group>
+        <ion-item>
+          <ion-label>Efectivo</ion-label>
+          <ion-radio slot="start" value="efectivo"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label>Tarjeta Débito</ion-label>
+          <ion-radio slot="start" value="debito"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </div>
+
+    <ion-button expand="block" class="btn-buscar">Continuar</ion-button>
+    </div>
+    
+  </div>
+  
+</ion-content>

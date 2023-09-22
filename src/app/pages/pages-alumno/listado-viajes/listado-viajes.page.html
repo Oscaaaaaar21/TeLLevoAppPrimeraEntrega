@@ -1,0 +1,87 @@
+<ion-content>
+    <ion-menu contentId="main-content">
+      <ion-header>
+        <ion-toolbar>
+          <ion-title class="menuclass">Menu</ion-title>
+        </ion-toolbar>
+      </ion-header>
+  
+      <ion-content color="light" class="ion-padding">
+        <ion-button expand="full" class="btn-menu" [routerLink]="['/perfil']">Perfil</ion-button>
+        <ion-button expand="full" class="btn-menu" [routerLink]="['/buscar-viajes']">Buscar Viaje</ion-button>
+        <ion-button expand="full" class="btn-menu" [routerLink]="['/mi-viajes']">Mis viajes</ion-button>
+        <ion-button expand="full" class="btn-menu" [routerLink]="['/listado-viajes']">Listado de Viajes</ion-button>
+        <ion-button expand="full" class="btn-menu" [routerLink]="['/metodos-pago']">metodos de Pago</ion-button>
+        <ion-button expand="full" class="btn-menu" [routerLink]="['/perfil-conductor']">Perfil de conductor</ion-button>
+        <ion-button expand="full" class="btn-menu" [routerLink]="['/home']">Cerrar Session</ion-button>
+      </ion-content>
+    </ion-menu>
+  
+    <div class="ion-page" id="main-content">
+      <ion-buttons slot="start">
+        <ion-menu-button class="menu"></ion-menu-button>
+      </ion-buttons>
+    </div>
+  
+    <div class="login bg degradado-negro">
+      <div style="margin-bottom: 10px;">
+        <ion-label
+          class="animated-text"
+          style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5)"
+        >
+          <span class="custom-t">T</span>e<span class="custom-l">Ll</span>evo<span
+            class="custom-a"
+            >A</span
+          >pp
+        </ion-label>
+      </div>
+  
+      <div class="mis-viajes" style="text-align: center;">
+        <!-- Viaje 1 -->
+        <ion-item class="viaje" style="margin-top: 40px;">
+          <ion-avatar slot="start">
+            <img src="#" alt="Foto">
+          </ion-avatar>
+          <ion-label style="font-size: 0.9rem;">
+            <h3 style="font-size: 1rem;">Nombre de Conductor 1</h3>
+            <p style="font-size: 0.8rem;">Dirección inicio/final viaje</p>
+            <H5>Metodo de Pago : Tarjeta</H5>
+            <ion-badge style="font-size: 0.8rem;">Calificacion</ion-badge>
+          </ion-label>
+        </ion-item>
+        <p style="font-size: 0.8rem;">Costo Carrera</p>
+        
+        <!-- Viaje 2 -->
+        <ion-item class="viaje" style="margin-top: 30px;">
+          <ion-avatar slot="start">
+            <img src="#" alt="Foto">
+          </ion-avatar>
+          <ion-label style="font-size: 0.9rem;">
+            <h3 style="font-size: 1rem;">Nombre de Conductor 2</h3>
+            <p style="font-size: 0.8rem;">Dirección inicio/final viaje</p>
+            <H5>Metodo de Pago : Efectivo</H5>
+            <ion-badge style="font-size: 0.8rem;">Calificacion</ion-badge>
+          </ion-label>
+        </ion-item>
+        <p style="font-size: 0.8rem;">Costo Carrera</p>
+  
+        <!-- Viaje 3 -->
+        <ion-item class="viaje" style="margin-top: 30px;">
+          <ion-avatar slot="start">
+            <img src="#" alt="Foto">
+          </ion-avatar>
+          <ion-label style="font-size: 0.9rem;">
+            <h3 style="font-size: 1rem;">Nombre de Conductor 3</h3>
+            <p style="font-size: 0.8rem;">Dirección inicio/final viaje</p>
+            <H5>Metodo de Pago : Efectivo</H5>
+            <ion-badge style="font-size: 0.8rem;">Calificacion</ion-badge>
+          </ion-label>
+        </ion-item>
+        <p style="font-size: 0.8rem;">Costo Carrera</p>
+  
+      </div>
+      
+    </div>
+    
+  </ion-content>
+  

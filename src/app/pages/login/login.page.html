@@ -1,0 +1,24 @@
+<ion-content class="bg">
+
+  <div class="login bg degradado-negro">
+    <ion-label class="animated-text" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">
+      <span class="custom-t">T</span>e<span class="custom-l">Ll</span>evo<span class="custom-a">A</span>pp
+    </ion-label>
+    <div>
+      <div class="correo">
+        <ion-input label="Ingresa Su correo : " label-placement="floating" fill="solid" placeholder="ionic@gmail.com"></ion-input>
+      </div>
+      <div class="pass">
+        <ion-input label="Contraseña :" type="password" label-placement="floating" fill="outline" placeholder="*********"></ion-input>
+      </div>
+      <div>
+        <ion-button expand="block" class="btn">
+          <ion-label>Iniciar Sesion</ion-label>
+        </ion-button>
+        <a class="recuperar" [routerLink]="['/restablecer']">¿ has olvidado tu contraseña ?</a>
+      </div>
+    </div>
+    <ion-back-button [defaultHref]="'/home'" icon="home"></ion-back-button>
+  </div>
+  
+  </ion-content>

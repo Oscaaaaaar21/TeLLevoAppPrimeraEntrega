@@ -1,0 +1,51 @@
+<ion-content>
+  <ion-menu contentId="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title class="menuclass">Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content color="light" class="ion-padding">
+      <ion-button expand="full" class="btn-menu">Perfil</ion-button>
+      <ion-button expand="full" class="btn-menu">Crear Viaje</ion-button>
+      <ion-button expand="full" class="btn-menu">Listado de Viajes</ion-button>
+      <ion-button expand="full" class="btn-menu">Cartera</ion-button>
+      <ion-button expand="full" class="btn-menu">Metodos de Pago</ion-button>
+    </ion-content>
+  </ion-menu>
+
+  <div class="ion-page" id="main-content">
+    <ion-buttons slot="start">
+      <ion-menu-button class="menu"></ion-menu-button>
+    </ion-buttons>
+  </div>
+
+  <div class="login bg degradado-negro">
+    <div style="margin-bottom: 10px;">
+      <ion-label
+        class="animated-text"
+        style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5)"
+      >
+        <span class="custom-t">T</span>e<span class="custom-l">Ll</span>evo<span
+          class="custom-a"
+          >A</span
+        >pp
+      </ion-label>
+    </div>
+
+    <div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1174.952048342616!2d-70.57714624986386!3d-33.59839578475904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662d7037854df81%3A0x893f58a1479b8f82!2sDuoc%20UC%3A%20Sede%20Puente%20Alto!5e0!3m2!1ses!2scl!4v1694797508377!5m2!1ses!2scl"
+        width="600"
+        height="780"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+    
+  </div>
+  <ion-button expand="full" class="btn-menu" (click)="presentActionSheet()">Abrir Menú</ion-button>
+</ion-content>

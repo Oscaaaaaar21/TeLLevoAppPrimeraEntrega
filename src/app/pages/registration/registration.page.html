@@ -1,0 +1,32 @@
+<ion-content class="bg">
+
+  <div class="login bg degradado-negro">
+    <ion-label class="animated-text" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">
+      <span class="custom-t">T</span>e<span class="custom-l">Ll</span>evo<span class="custom-a">A</span>pp
+    </ion-label>
+    <div>
+      <div class="nombre">
+        <ion-input label="Ingresa su Nombre : " label-placement="floating" fill="solid" placeholder="Javier"></ion-input>
+      </div>
+      <div class="apellido">
+        <ion-input label="Ingresa su Apellido : " label-placement="floating" fill="solid" placeholder="Ramos"></ion-input>
+      </div>
+      <div class="correo">
+        <ion-input label="Ingresa su Correo : " label-placement="floating" fill="solid" placeholder="ionic@gmail.com"></ion-input>
+      </div>
+      <div class="pass">
+        <ion-input label="Contraseña :" type="password" label-placement="floating" fill="outline" placeholder="*********"></ion-input>
+      </div>
+      <div class="pass1">
+        <ion-input label="Contraseña Nuevamente :" type="password" label-placement="floating" fill="outline" placeholder="*********"></ion-input>
+      </div>
+      <div>
+        <ion-button expand="block" class="btn">
+          <ion-label>Crear Cuenta</ion-label>
+        </ion-button>
+      </div>
+    </div>
+    <ion-back-button [defaultHref]="'/home'" icon="home"></ion-back-button>
+  </div>
+  
+  </ion-content>

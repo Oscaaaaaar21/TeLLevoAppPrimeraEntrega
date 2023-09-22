@@ -1,0 +1,59 @@
+
+
+
+
+.splash {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: serif;
+    font-size: xxx-large;
+    height: 100vh;
+  }
+  
+  .image-container {
+    margin-top: 20px; /* Espacio entre el texto y la imagen */
+    border-radius: 50%; /* Esto hace que los bordes sean circulares */
+    overflow: hidden; /* Esto asegura que la imagen se ajuste correctamente al borde circular */
+    height: 200px;
+    width: 200px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    display: flex;
+    }
+    
+
+.spinner{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.custom-t{
+    color: #FFDFAA;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  
+}
+.custom-l {
+    color: #FFDFAA;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.custom-a {
+    color: #FFDFAA;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.animated-text {
+    animation: fade-in 1s ease-out;
+  }
+  
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  

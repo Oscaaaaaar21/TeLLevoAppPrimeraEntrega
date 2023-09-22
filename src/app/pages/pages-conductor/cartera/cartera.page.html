@@ -1,0 +1,43 @@
+<ion-menu contentId="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title class="menuclass">Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content color="light" class="ion-padding">
+    <ion-button expand="full" class="btn-menu" [routerLink]="['/perfil-conductor']">Perfil Chofer</ion-button>
+    <ion-button expand="full" class="btn-menu" [routerLink]="['/crear-viaje']">Crear Viaje</ion-button>
+    <ion-button expand="full" class="btn-menu" [routerLink]="['/listado-viajes-conductor']">Listado de Viajes</ion-button>
+    <ion-button expand="full" class="btn-menu" [routerLink]="['/cartera']">Cartera</ion-button>
+    <ion-button expand="full" class="btn-menu" [routerLink]="['/metodos-pago']">metodos de Pago</ion-button>
+    <ion-button expand="full" class="btn-menu" [routerLink]="['/perfil']">Cambiar perfil alumno</ion-button>
+    <ion-button expand="full" class="btn-menu" [routerLink]="['/home']">Cerrar Session</ion-button>
+  </ion-content>
+</ion-menu>
+
+<div class="ion-page" id="main-content">
+  <ion-buttons slot="start">
+    <ion-menu-button class="menu"></ion-menu-button>
+  </ion-buttons>
+
+  <div class="login bg degradado-negro">
+    <ion-label class="animated-text" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">
+      <span class="custom-t">T</span>e<span class="custom-l">Ll</span>evo<span class="custom-a">A</span>pp
+    </ion-label>
+
+    <div>
+      <div class="saldo">
+        <ion-label>Saldo Ganado : $40.000</ion-label>
+      </div>
+      <div class="viajes">
+        <ion-label>Viajes Realizados en el Mes : 4</ion-label>
+      </div>
+      <div class="retiro">
+        <ion-button expand="block" class="btn">
+          <ion-label>Hacer Retiro</ion-label>
+        </ion-button>
+      </div>
+    </div>
+  </div>
+</div>

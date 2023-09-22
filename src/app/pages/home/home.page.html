@@ -1,0 +1,23 @@
+<ion-content class="bg">
+  <div class="home degradado-negro">
+    <ion-label class="animated-text" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">
+      <span class="custom-t">T</span>e<span class="custom-l">Ll</span>evo<span class="custom-a">A</span>pp
+    </ion-label>
+    <div>
+      <ion-button expand="block" class="btn" [routerLink]="['/login']">
+        <ion-avatar>
+          <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+        </ion-avatar>
+        <ion-label>Iniciar Sesion</ion-label>
+      </ion-button>
+
+      <ion-button expand="block" class="btn1" [routerLink]="['/registration']">
+        <ion-avatar>
+          <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+        </ion-avatar>
+        <ion-label>Crear Cuenta</ion-label>
+      </ion-button>
+      <ion-back-button [defaultHref]="'/home'" icon="home"></ion-back-button>
+    </div>
+  </div>
+</ion-content>
