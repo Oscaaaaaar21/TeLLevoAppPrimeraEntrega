@@ -1,7 +1,10 @@
 {
-  "name": "TeLlevoApp",
+  "name": "AppUber",
   "integrations": {
-    "capacitor": {}
+    "capacitor": {
+      "enabled": false
+    },
+    "cordova": {}
   },
   "type": "angular"
 }
